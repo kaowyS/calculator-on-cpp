@@ -49,19 +49,19 @@ int main() {
         cin >> a;
         cout << "Введите второе число: ";
         cin >> b;
-        cout << "Выберите действие: ";
-        cin >> c; 
-        
-        switch (c) {
-            case '+': result = a + b; break;
-            case '-': result = a - b; break;
-            case '/': result = a / b; 
-                if (b == 0) {
-                    cout << "На 0 делить нельзя!";
-                    break;
-                } break;
-                
-            case '*': result = a * b; break;
+        cout << "Выберите действие: "; 
+        cin >> c;
+
+    switch (c) {
+        case '+': result = a + b; break;
+        case '-': result = a - b; break;
+        case '/': result = a / b; 
+        if (b == 0) {
+            cout << "На 0 делить нельзя!";
+            break;
+        } break;
+            
+        case '*': result = a * b; break;
         
             default:
                 cout << "Неверное действие";
@@ -84,7 +84,7 @@ int main() {
             case '/': result = a / b; break;
             case '*': result = a *b; break;
             default:
-            cout << "Неверное действие";
+            cout << "Неверное действие" << endl;
         }
 
         lastAnswer = result;
